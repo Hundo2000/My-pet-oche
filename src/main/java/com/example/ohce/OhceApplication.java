@@ -37,7 +37,7 @@ public class OhceApplication implements CommandLineRunner, ExitCodeGenerator {
         log.info(
             greetingService.generateGreetingText(LocalTime.now().truncatedTo(ChronoUnit.MINUTES)) + " " + userName);
 
-        log.info("please type a word you want to reverse");
+        log.info("пожалуйста, введите слово, которое вы хотите поменять местами");
 
         reverseService.serveWordReverseRequest(scanner);
 
